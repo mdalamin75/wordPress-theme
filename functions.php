@@ -21,3 +21,24 @@ function md_css_js_file_calling(){
     wp_enqueue_script('main', get_template_directory_uri().'js/main.js', array(), '1.0.0', 'true');
 }
 add_action('wp_enqueue_scripts', 'md_css_js_file_calling');
+
+
+// Theme Function for logo customization
+function md_customizar_register($wp_customize){
+    $wp_customize->add_section('md_header_area', array(
+        'title' =>__('Header Area', 'mdalamin'),
+        'description' => 'If you interested to update your header area, you can do it here.'
+    ));
+
+    $wp_customize->add_setting('md_logo', array(
+        'default' => get_bloginfo('template_directory').'/img/logo.jpg'
+    ));
+
+    $wp_customize-> add_control(new WP_Customize_Image_Control($wp_customize, 'md_logo', array(
+        'label' => 'Logo Upload',
+        'description' => 'If you interested to change or update your logo you can do it.',
+        'setting' => 'md_logo',
+        'section' => 'md_header_area',
+    )));
+}
+add_action('customize_register','md_customizar_register');
