@@ -72,6 +72,24 @@ function md_customizar_register($wp_customize){
             'center_menu' => "Center Menu",
         ),
     ));
+
+
+    // Footer Option
+    $wp_customize->add_section('md_footer_option', array(
+        'title' => __('Footer Option', 'mdalamin'),
+        'description' => 'If you want to change your footer setting, you can do it here.'
+    ));
+
+    $wp_customize->add_setting('md_copyright_section', array(
+        'default' => '&copy; Copyright 2024 | Procoder BD',
+    ));
+
+    $wp_customize->add_control('md_copyright_section', array(
+        'label' => 'Copyright Text',
+        'description' => 'If you need you can update your copyright text from here',
+        'setting' => 'md_copyright_section',
+        'section' => 'md_footer_option',
+    ));
 }
 add_action('customize_register','md_customizar_register');
 

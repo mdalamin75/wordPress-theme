@@ -140,3 +140,21 @@ Menu Position
 #header_area.center_menu .col-md-9 ul ul{
     text-align: left;
 }
+
+/*======================== 
+Copyright Area
+=======================*/
+#copyright_area{
+	background-color: #292929;
+	padding: 20px 0;
+	color: #fff;
+	text-align: center;
+}
+#copyright_area p{
+	margin: 0;
+	color: #fff;
+	font-size: 15px;
+}
+#copyright_area p a:hover{
+	text-decoration: underline;
+}
