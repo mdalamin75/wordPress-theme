@@ -22,6 +22,7 @@ function md_css_js_file_calling(){
 }
 add_action('wp_enqueue_scripts', 'md_css_js_file_calling');
 
+
 // Theme Google fonts calling
 function md_add_google_fonts(){
     wp_enqueue_style('md_google_fonts', 'https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Oswald&display=swap', false);
@@ -48,3 +49,7 @@ function md_customizar_register($wp_customize){
     )));
 }
 add_action('customize_register','md_customizar_register');
+
+
+// Menu Register
+register_nav_menu('main_menu', __('Main Menu', 'mdalamin'));

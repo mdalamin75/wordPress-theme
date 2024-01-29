@@ -9,19 +9,19 @@
 <head>
     <meta charset="<?php bloginfo('charset')?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="" rel="stylesheet">
     <?php wp_head()?>
 </head>
 <body <?php body_class()?> >
     <div id="header_area">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-md-3">
                     <a href="/">
                         <img src="<?php echo get_theme_mod('md_logo'); ?>" alt="logo">
                     </a>
+                </div>
+                <div class="col-md-9">
+                    <?php wp_nav_menu(array('theme_location' => 'main_menu', 'menu_id' => 'nav')); ?>
                 </div>
             </div>
         </div>
