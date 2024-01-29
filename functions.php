@@ -32,6 +32,8 @@ add_action('wp_enqueue_scripts', 'md_add_google_fonts');
 
 // Theme Function for logo customization
 function md_customizar_register($wp_customize){
+
+    //Header Area Function
     $wp_customize->add_section('md_header_area', array(
         'title' =>__('Header Area', 'mdalamin'),
         'description' => 'If you interested to update your header area, you can do it here.'
@@ -47,6 +49,29 @@ function md_customizar_register($wp_customize){
         'setting' => 'md_logo',
         'section' => 'md_header_area',
     )));
+
+    //Menu Position Option
+    $wp_customize->add_section('md_menu_option', array(
+        'title' => __('Menu Position Option', 'mdalamin'),
+        'description' => 'If you want to change your menu position, you can do it here.'
+    ));
+
+    $wp_customize->add_setting('md_menu_position', array(
+        'default' => 'right_menu',
+    ));
+
+    $wp_customize->add_control('md_menu_position', array(
+        'label' => 'Menu Position',
+        'description' => 'Select your menu position',
+        'setting' => 'md_menu_position',
+        'section' => 'md_menu_option',
+        'type' => 'radio',
+        'choices' => array(
+            'left_menu' => "Left Menu",
+            'right_menu' => "Right Menu",
+            'center_menu' => "Center Menu",
+        ),
+    ));
 }
 add_action('customize_register','md_customizar_register');
 

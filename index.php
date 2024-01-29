@@ -12,7 +12,7 @@
     <?php wp_head()?>
 </head>
 <body <?php body_class()?> >
-    <div id="header_area">
+    <div id="header_area" class="<?php echo get_theme_mod('md_menu_position'); ?>">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-3">
