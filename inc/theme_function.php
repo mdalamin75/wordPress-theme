@@ -11,7 +11,7 @@ function md_customizar_register($wp_customize){
     ));
 
     $wp_customize->add_setting('md_logo', array(
-        'default' => get_bloginfo('template_directory').'/img/logo.jpg'
+        'default' => get_bloginfo('template_directory').'/img/logo.png'
     ));
 
     $wp_customize-> add_control(new WP_Customize_Image_Control($wp_customize, 'md_logo', array(
@@ -52,7 +52,7 @@ function md_customizar_register($wp_customize){
     ));
 
     $wp_customize->add_setting('md_copyright_section', array(
-        'default' => '&copy; Copyright 2024 | Procoder BD',
+        'default' => '&copy; Copyright 2024 | mdalamin',
     ));
 
     $wp_customize->add_control('md_copyright_section', array(
