@@ -26,6 +26,12 @@
                             _e('No post found');
                         endif;
                     ?>
+                    <div id="page_nav">
+                        <?php if('md_pagenav') {md_pagenav();}else{ ?>
+                            <?php next_post_link();?>
+                            <?php previous_post_link();?>
+                        <?php } ?>
+                    </div>
                 </div>
                 <div class="col-md-3">
                     <h2>THis is sidebar area</h2>

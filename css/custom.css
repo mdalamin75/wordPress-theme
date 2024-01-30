@@ -28,7 +28,6 @@ a.readmore{
 	font-size: 15px;
 	transition: 0.5s;
 	padding: 10px 25px;
-	border-radius: 10px;
 	display: inline-block;
 	text-decoration: none;
 	background-color: #ea1a70;
@@ -166,7 +165,9 @@ Index Page Style
 }
 #body_area .blog_area{
 	width: 100%;
-	margin-bottom: 15px;
+	margin-bottom: 17px;
+	background-color: rgb(243, 243, 243);
+	padding: 15px;
 }
 #body_area .post_thumb{
 	overflow: hidden;
@@ -188,6 +189,7 @@ Index Page Style
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	font-size: 30px;
+	word-wrap: break-word;
 }
 #body_area .post_details h2 a{
 	color: #262626;
@@ -196,6 +198,30 @@ Index Page Style
 }
 #body_area .post_details h2 a:hover{
 	color: #ea1a70;
+}
+/*======================== 
+Pagenav Area Styling
+=======================*/
+#page_nav p.pages{
+	color: #ffffff;
+	padding: 5px 10px;
+	background-color: #ea1a70;
+}
+#page_nav p.pages span{
+	display: inline-block;
+	padding: 0 5px;
+}
+#page_nav .page-numbers{
+	color: #ffffff;
+	padding: 5px 10px;
+	margin-right: 5px;
+	text-decoration: none;
+	display: inline-block;
+	transition: 0.5s;
+	background-color: #ea1a70;
+}
+#page_nav .page-numbers.current, #page_nav .page-numbers:hover{
+	background-color: #262626;
 }
 /*======================== 
 Copyright Area
