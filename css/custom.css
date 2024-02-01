@@ -39,7 +39,11 @@ a.readmore:hover{
 Header Area Style
 =======================*/
 #header_area {
-	padding: 15px 0;
+	padding: 15px 0 20px;
+	box-shadow: 0 3px 10px #ddd;
+}
+#header_area .col-md-3 a img{
+	width: 65%;
 }
 #header_area .col-md-9 ul {
 	font-family: "Oswald", sans-serif;
@@ -166,8 +170,9 @@ Index Page Style
 #body_area .blog_area{
 	width: 100%;
 	margin-bottom: 17px;
-	background-color: rgb(243, 243, 243);
+	background-color: #ffffff;
 	padding: 15px;
+	box-shadow: 0px 0px 10px #ddd;
 }
 #body_area .post_thumb{
 	overflow: hidden;
@@ -200,6 +205,72 @@ Index Page Style
 	color: #ea1a70;
 }
 /*======================== 
+Sidebar Area Styling
+=======================*/
+.child_sidebar {
+	margin-bottom: 20px;
+}
+.child_sidebar h2{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+	word-wrap: break-word;
+	margin-bottom: 0;
+	line-height: 1em;
+	border-left: 5px solid #ea1a70;
+	padding-left: 10px;
+}
+.child_sidebar input[type="search"]{
+	background-color: #ffffff;
+	border: 1px solid #ddd;
+	padding: 10px;
+}
+.child_sidebar button[type="submit"]{
+	background-color: #ea1a70;
+	border: 1px solid #ea1a70;
+	padding: 10px;
+	margin: 0;
+	color: #ffffff;
+	transition: 0.5s;
+}
+.child_sidebar button[type="submit"]:hover{
+	background-color: #262626;
+	border: 1px solid #262626;
+}
+.child_sidebar ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: left;
+}
+.child_sidebar ul li{
+	display: block;
+	margin-bottom: 5px;
+}
+.child_sidebar ul ul{
+	display: none;
+}
+.child_sidebar ul li a{
+	display: inline-block;
+	color: #262626;
+	text-decoration: none;
+}
+.child_sidebar ul li a:hover{
+	color: #ea1a70;
+}
+.child_sidebar a.tag-cloud-link{
+	color: #ffffff;
+	background-color: #262626;
+	display: inline-block;
+	font-size: 12px !important;
+	text-decoration: none;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+.child_sidebar a.tag-cloud-link:hover{
+	background-color: #ea1a70;
+}
+/*======================== 
 Pagenav Area Styling
 =======================*/
 #page_nav p.pages{
@@ -222,6 +293,18 @@ Pagenav Area Styling
 }
 #page_nav .page-numbers.current, #page_nav .page-numbers:hover{
 	background-color: #262626;
+}
+/*======================== 
+Footer Area Styling
+=======================*/
+#footer{
+	background-color: #292929;
+	padding: 40px 0 20px;
+	border-bottom: 1px solid #ddd;
+	color: #fff;
+}
+#footer .child_sidebar ul li a {
+    color: #ffffff;
 }
 /*======================== 
 Copyright Area
