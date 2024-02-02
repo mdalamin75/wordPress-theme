@@ -2,14 +2,14 @@
 Common CSS
 =======================*/
 body {
-	font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    line-height: 1.5em;
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
+	line-height: 1.5em;
 }
 p {
-	font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    line-height: 1.5em;
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
+	line-height: 1.5em;
 }
 h1,
 h2,
@@ -18,12 +18,12 @@ h4,
 h5,
 h6 {
 	font-family: "Oswald", sans-serif;
-    line-height: 1.5em;
+	line-height: 1.5em;
 }
 img {
 	max-width: 100%;
 }
-a.readmore{
+a.readmore {
 	color: #ffffff;
 	font-size: 15px;
 	transition: 0.5s;
@@ -32,7 +32,7 @@ a.readmore{
 	text-decoration: none;
 	background-color: #ea1a70;
 }
-a.readmore:hover{
+a.readmore:hover {
 	background-color: #262626;
 }
 /*======================== 
@@ -42,7 +42,7 @@ Header Area Style
 	padding: 15px 0 20px;
 	box-shadow: 0 3px 10px #ddd;
 }
-#header_area .col-md-3 a img{
+#header_area .col-md-3 a img {
 	width: 65%;
 }
 #header_area .col-md-9 ul {
@@ -56,10 +56,10 @@ Header Area Style
 	display: inline-block;
 	position: relative;
 }
-#header_area .col-md-9 ul li a span{
+#header_area .col-md-9 ul li a span {
 	display: block;
 	font-size: 13px;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 #header_area .col-md-9 ul li a {
 	color: #262626;
@@ -74,7 +74,6 @@ Header Area Style
 	color: #fff;
 }
 
-
 /*Dropdown Menu*/
 #header_area .col-md-9 ul li ul {
 	background: #262626 none repeat scroll 0 0;
@@ -84,7 +83,7 @@ Header Area Style
 	text-align: left;
 	top: 62px;
 	width: 200px;
-    z-index: 99999;
+	z-index: 99999;
 }
 #header_area .col-md-9 ul li:hover ul {
 	left: 0px;
@@ -137,71 +136,71 @@ Header Area Style
 /*======================== 
 Menu Position
 =======================*/
-#header_area.left_menu .col-md-3{
-    order: 2;
+#header_area.left_menu .col-md-3 {
+	order: 2;
 }
-#header_area.left_menu .col-md-9{
-    order: 1;
+#header_area.left_menu .col-md-9 {
+	order: 1;
 }
-#header_area.left_menu .col-md-9 ul{
-    text-align: left;
+#header_area.left_menu .col-md-9 ul {
+	text-align: left;
 }
 
-#header_area.center_menu .col-md-3{
-    width: 100%;
-    text-align: center;
-    margin-bottom: 10px;
+#header_area.center_menu .col-md-3 {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 10px;
 }
-#header_area.center_menu .col-md-9{
-    width: 100%;
+#header_area.center_menu .col-md-9 {
+	width: 100%;
 }
-#header_area.center_menu .col-md-9 ul{
-    text-align: center;
+#header_area.center_menu .col-md-9 ul {
+	text-align: center;
 }
-#header_area.center_menu .col-md-9 ul ul{
-    text-align: left;
+#header_area.center_menu .col-md-9 ul ul {
+	text-align: left;
 }
 /*======================== 
 Index Page Style
 =======================*/
-#body_area{
+#body_area {
 	padding: 45px 0;
 }
-#body_area .blog_area{
+#body_area .blog_area {
 	width: 100%;
 	margin-bottom: 17px;
 	background-color: #ffffff;
 	padding: 15px;
 	box-shadow: 0px 0px 10px #ddd;
 }
-#body_area .post_thumb{
+#body_area .post_thumb {
 	overflow: hidden;
 	width: 100%;
 	margin-bottom: 15px;
 }
-#body_area .post_thumb img{
+#body_area .post_thumb img {
 	width: 100%;
 	display: block;
 	transition: 0.5s;
 }
-#body_area .post_thumb:hover img{
+#body_area .post_thumb:hover img {
 	transform: scale(1.1);
 }
-#body_area .post_details{
+#body_area .post_details {
 	width: 100%;
 }
-#body_area .post_details h2{
-	font-family: 'Roboto', sans-serif;
+#body_area .post_details h2 {
+	font-family: "Roboto", sans-serif;
 	font-weight: 700;
 	font-size: 30px;
 	word-wrap: break-word;
 }
-#body_area .post_details h2 a{
+#body_area .post_details h2 a {
 	color: #262626;
 	text-decoration: none;
 	transition: 0.5s;
 }
-#body_area .post_details h2 a:hover{
+#body_area .post_details h2 a:hover {
 	color: #ea1a70;
 }
 /*======================== 
@@ -210,8 +209,8 @@ Sidebar Area Styling
 .child_sidebar {
 	margin-bottom: 20px;
 }
-.child_sidebar h2{
-	font-family: 'Roboto', sans-serif;
+.child_sidebar h2 {
+	font-family: "Roboto", sans-serif;
 	font-weight: 700;
 	font-size: 30px;
 	word-wrap: break-word;
@@ -220,12 +219,12 @@ Sidebar Area Styling
 	border-left: 5px solid #ea1a70;
 	padding-left: 10px;
 }
-.child_sidebar input[type="search"]{
+.child_sidebar input[type="search"] {
 	background-color: #ffffff;
 	border: 1px solid #ddd;
 	padding: 10px;
 }
-.child_sidebar button[type="submit"]{
+.child_sidebar button[type="submit"] {
 	background-color: #ea1a70;
 	border: 1px solid #ea1a70;
 	padding: 10px;
@@ -233,32 +232,32 @@ Sidebar Area Styling
 	color: #ffffff;
 	transition: 0.5s;
 }
-.child_sidebar button[type="submit"]:hover{
+.child_sidebar button[type="submit"]:hover {
 	background-color: #262626;
 	border: 1px solid #262626;
 }
-.child_sidebar ul{
+.child_sidebar ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	text-align: left;
 }
-.child_sidebar ul li{
+.child_sidebar ul li {
 	display: block;
 	margin-bottom: 5px;
 }
-.child_sidebar ul ul{
+.child_sidebar ul ul {
 	display: none;
 }
-.child_sidebar ul li a{
+.child_sidebar ul li a {
 	display: inline-block;
 	color: #262626;
 	text-decoration: none;
 }
-.child_sidebar ul li a:hover{
+.child_sidebar ul li a:hover {
 	color: #ea1a70;
 }
-.child_sidebar a.tag-cloud-link{
+.child_sidebar a.tag-cloud-link {
 	color: #ffffff;
 	background-color: #262626;
 	display: inline-block;
@@ -267,22 +266,22 @@ Sidebar Area Styling
 	padding: 5px;
 	margin-bottom: 5px;
 }
-.child_sidebar a.tag-cloud-link:hover{
+.child_sidebar a.tag-cloud-link:hover {
 	background-color: #ea1a70;
 }
 /*======================== 
 Pagenav Area Styling
 =======================*/
-#page_nav p.pages{
+#page_nav p.pages {
 	color: #ffffff;
 	padding: 5px 10px;
 	background-color: #ea1a70;
 }
-#page_nav p.pages span{
+#page_nav p.pages span {
 	display: inline-block;
 	padding: 0 5px;
 }
-#page_nav .page-numbers{
+#page_nav .page-numbers {
 	color: #ffffff;
 	padding: 5px 10px;
 	margin-right: 5px;
@@ -291,35 +290,46 @@ Pagenav Area Styling
 	transition: 0.5s;
 	background-color: #ea1a70;
 }
-#page_nav .page-numbers.current, #page_nav .page-numbers:hover{
+#page_nav .page-numbers.current,
+#page_nav .page-numbers:hover {
 	background-color: #262626;
+}
+/*======================== 
+Comment Area Styling
+=======================*/
+#comments_area h3{
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	word-wrap: break-word;
+	margin-bottom: 0;
 }
 /*======================== 
 Footer Area Styling
 =======================*/
-#footer{
+#footer {
 	background-color: #292929;
 	padding: 40px 0 20px;
 	border-bottom: 1px solid #ddd;
 	color: #fff;
 }
 #footer .child_sidebar ul li a {
-    color: #ffffff;
+	color: #ffffff;
 }
 /*======================== 
 Copyright Area
 =======================*/
-#copyright_area{
+#copyright_area {
 	background-color: #292929;
 	padding: 20px 0;
 	color: #fff;
 	text-align: center;
 }
-#copyright_area p{
+#copyright_area p {
 	margin: 0;
 	color: #fff;
 	font-size: 15px;
 }
-#copyright_area p a:hover{
+#copyright_area p a:hover {
 	text-decoration: underline;
 }
