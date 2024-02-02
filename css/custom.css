@@ -23,7 +23,12 @@ h6 {
 img {
 	max-width: 100%;
 }
-a.readmore {
+a {
+	color: #262626;
+	/* text-decoration: none; */
+}
+a.readmore,
+input[type="submit"].submit {
 	color: #ffffff;
 	font-size: 15px;
 	transition: 0.5s;
@@ -32,7 +37,8 @@ a.readmore {
 	text-decoration: none;
 	background-color: #ea1a70;
 }
-a.readmore:hover {
+a.readmore:hover,
+input[type="submit"].submit:hover {
 	background-color: #262626;
 }
 /*======================== 
@@ -173,6 +179,10 @@ Index Page Style
 	padding: 15px;
 	box-shadow: 0px 0px 10px #ddd;
 }
+#body_area .post_page .blog_area {
+	box-shadow: none;
+	padding-top: 0;
+}
 #body_area .post_thumb {
 	overflow: hidden;
 	width: 100%;
@@ -202,6 +212,22 @@ Index Page Style
 }
 #body_area .post_details h2 a:hover {
 	color: #ea1a70;
+}
+/*======================== 
+Archive Area Styling
+=======================*/
+#archive_title{
+	background-color: #ea1a70;
+	padding: 15px;
+	margin-bottom: 20px;
+}
+#archive_title h1{
+	color: #ffffff;
+	font-size: 15px;
+	margin-bottom: 0;
+}
+#archive_title .discription p {
+    color: #ddd;
 }
 /*======================== 
 Sidebar Area Styling
@@ -297,12 +323,27 @@ Pagenav Area Styling
 /*======================== 
 Comment Area Styling
 =======================*/
-#comments_area h3{
+#comments_area h3 {
 	font-family: "Roboto", sans-serif;
 	font-weight: 700;
 	font-size: 20px;
 	word-wrap: break-word;
 	margin-bottom: 0;
+}
+#comments_area label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: 700;
+	font-size: 18px;
+}
+#comments_area textarea,
+#comments_area input {
+	border: 1px solid #ddd;
+	width: 100%;
+	padding: 15px;
+}
+#comments_area textarea {
+	min-height: 150px;
 }
 /*======================== 
 Footer Area Styling
