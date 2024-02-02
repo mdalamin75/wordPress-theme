@@ -230,6 +230,60 @@ Archive Area Styling
     color: #ddd;
 }
 /*======================== 
+ 404 Area Styling
+=======================*/
+.error_page{
+	padding: 50px 0;
+	text-align: center;
+}
+.error_page h1{
+	color: #262626;
+	font-weight: 700;
+	font-size: 30px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	font-family: "Roboto", sans-serif;
+}
+.error_page p{
+	color: #ea1a70;
+	margin-bottom: 0;
+}
+.error_page a.homepage{
+	font-size: 18px;
+	color: #ffffff;
+	margin-bottom: 0;
+	transition: 0.5s;
+	margin-top: 20px;
+	padding: 10px 25px;
+	text-decoration: none;
+	display: inline-block;
+	text-transform: uppercase;
+	background-color: #ea1a70;
+}
+.error_page a.homepage:hover{
+	background-color: #262626;
+}
+.error_search{
+	margin-bottom: 15px;
+}
+.error_search input[type="text"] {
+	background-color: #ffffff;
+	border: 1px solid #ddd;
+	padding: 10px;
+}
+.error_search input[type="submit"] {
+	background-color: #ea1a70;
+	border: 1px solid #ea1a70;
+	padding: 10px;
+	margin: 0;
+	color: #ffffff;
+	transition: 0.5s;
+}
+.error_search input[type="submit"]:hover {
+	background-color: #262626;
+	border: 1px solid #262626;
+}
+/*======================== 
 Sidebar Area Styling
 =======================*/
 .child_sidebar {
