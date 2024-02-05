@@ -1,6 +1,9 @@
 /*======================== 
 Common CSS
 =======================*/
+:root{
+	--pink: #ea1a70;
+}
 body {
 	font-family: "Roboto", sans-serif;
 	font-size: 15px;
@@ -35,7 +38,7 @@ input[type="submit"].submit {
 	padding: 10px 25px;
 	display: inline-block;
 	text-decoration: none;
-	background-color: #ea1a70;
+	background-color: var(--pink);
 }
 a.readmore:hover,
 input[type="submit"].submit:hover {
@@ -76,7 +79,7 @@ Header Area Style
 	text-decoration: none;
 }
 #header_area .col-md-9 ul li a:hover {
-	background: #ea1a70;
+	background: var(--pink);
 	color: #fff;
 }
 
@@ -106,7 +109,7 @@ Header Area Style
 	color: #262626;
 }
 #header_area .col-md-9 ul li:hover a {
-	background: #ea1a70;
+	background: var(--pink);
 	color: #fff;
 }
 #header_area .col-md-9 ul li:hover ul li a {
@@ -127,7 +130,7 @@ Header Area Style
 	left: 200px;
 }
 #header_area .col-md-9 ul li ul li:hover a {
-	background: #ea1a70;
+	background: var(--pink);
 	color: #fff;
 }
 #header_area .col-md-9 ul ul li:hover ul li a {
@@ -135,7 +138,7 @@ Header Area Style
 	color: #fff;
 }
 #header_area .col-md-9 ul ul li ul li a:hover {
-	background: #ea1a70;
+	background: var(--pink);
 	color: #fff;
 }
 
@@ -211,13 +214,13 @@ Index Page Style
 	transition: 0.5s;
 }
 #body_area .post_details h2 a:hover {
-	color: #ea1a70;
+	color: var(--pink);
 }
 /*======================== 
 Archive Area Styling
 =======================*/
 #archive_title, #search_title{
-	background-color: #ea1a70;
+	background-color: var(--pink);
 	padding: 15px;
 	margin-bottom: 20px;
 }
@@ -245,7 +248,7 @@ Archive Area Styling
 	font-family: "Roboto", sans-serif;
 }
 .error_page p{
-	color: #ea1a70;
+	color: var(--pink);
 	margin-bottom: 0;
 }
 .error_page a.homepage{
@@ -258,7 +261,7 @@ Archive Area Styling
 	text-decoration: none;
 	display: inline-block;
 	text-transform: uppercase;
-	background-color: #ea1a70;
+	background-color: var(--pink);
 }
 .error_page a.homepage:hover{
 	background-color: #262626;
@@ -272,8 +275,8 @@ Archive Area Styling
 	padding: 10px;
 }
 .error_search input[type="submit"] {
-	background-color: #ea1a70;
-	border: 1px solid #ea1a70;
+	background-color: var(--pink);
+	border: 1px solid var(--pink);
 	padding: 10px;
 	margin: 0;
 	color: #ffffff;
@@ -296,7 +299,7 @@ Sidebar Area Styling
 	word-wrap: break-word;
 	margin-bottom: 0;
 	line-height: 1em;
-	border-left: 5px solid #ea1a70;
+	border-left: 5px solid var(--pink);
 	padding-left: 10px;
 }
 .child_sidebar input[type="search"] {
@@ -305,8 +308,8 @@ Sidebar Area Styling
 	padding: 10px;
 }
 .child_sidebar button[type="submit"] {
-	background-color: #ea1a70;
-	border: 1px solid #ea1a70;
+	background-color: var(--pink);
+	border: 1px solid var(--pink);
 	padding: 10px;
 	margin: 0;
 	color: #ffffff;
@@ -335,7 +338,7 @@ Sidebar Area Styling
 	text-decoration: none;
 }
 .child_sidebar ul li a:hover {
-	color: #ea1a70;
+	color: var(--pink);
 }
 .child_sidebar a.tag-cloud-link {
 	color: #ffffff;
@@ -347,7 +350,7 @@ Sidebar Area Styling
 	margin-bottom: 5px;
 }
 .child_sidebar a.tag-cloud-link:hover {
-	background-color: #ea1a70;
+	background-color: var(--pink);
 }
 /*======================== 
 Pagenav Area Styling
@@ -355,7 +358,7 @@ Pagenav Area Styling
 #page_nav p.pages {
 	color: #ffffff;
 	padding: 5px 10px;
-	background-color: #ea1a70;
+	background-color: var(--pink);
 }
 #page_nav p.pages span {
 	display: inline-block;
@@ -368,7 +371,7 @@ Pagenav Area Styling
 	text-decoration: none;
 	display: inline-block;
 	transition: 0.5s;
-	background-color: #ea1a70;
+	background-color: var(--pink);
 }
 #page_nav .page-numbers.current,
 #page_nav .page-numbers:hover {

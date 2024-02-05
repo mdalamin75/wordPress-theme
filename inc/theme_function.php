@@ -61,5 +61,46 @@ function md_customizar_register($wp_customize){
         'setting' => 'md_copyright_section',
         'section' => 'md_footer_option',
     ));
+
+    // Theme Color
+    $wp_customize -> add_section('md_colors', array(
+        'title' => __('Theme Color', 'mdalamin'),
+        'description' => 'If you need you can change your theme color.'
+    ));
+
+    $wp_customize -> add_setting('md_bg_color', array(
+        'default' => "#ffffff"
+    ));
+
+    $wp_customize -> add_control(new WP_Customize_Color_Control($wp_customize, 'md_bg_color', array(
+        'label' => 'Background Color',
+        'section' => "md_colors",
+        'settings' => 'md_bg_color',
+    )));
+
+    $wp_customize -> add_setting('md_primary_color', array(
+        'default' => "#ea1a70"
+    ));
+
+    $wp_customize -> add_control(new WP_Customize_Color_Control($wp_customize, 'md_primary_color', array(
+        'label' => 'Primary Color',
+        'section' => "md_colors",
+        'settings' => 'md_primary_color',
+    )));
 }
 add_action('customize_register','md_customizar_register');
+
+
+function md_theme_color_customize(){
+    ?>
+        <style>
+            body{
+                background: <?php echo get_theme_mod('md_bg_color'); ?>
+            }
+            :root{
+                --pink: <?php echo get_theme_mod('md_primary_color'); ?>;
+            }
+        </style>
+    <?php
+}
+add_action('wp_head', 'md_theme_color_customize');
