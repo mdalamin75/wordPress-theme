@@ -25,6 +25,7 @@ h6 {
 }
 img {
 	max-width: 100%;
+	height: auto;
 }
 a {
 	color: #262626;
@@ -401,6 +402,18 @@ Comment Area Styling
 }
 #comments_area textarea {
 	min-height: 150px;
+}
+/*======================== 
+Theme Service Area
+=======================*/
+#service_area{
+	padding: 45px 0;
+}
+#service_area .child_service{
+	background-color: #ddd;
+	box-shadow: 0 0 10px #ddd;
+	padding: 15px;
+	border-radius: 15px;
 }
 /*======================== 
 Footer Area Styling
