@@ -45,6 +45,14 @@ a.readmore:hover,
 input[type="submit"].submit:hover {
 	background-color: #262626;
 }
+.button{
+	color: #ffffff;
+	padding: 10px 25px;
+	border-radius: 5px;
+	display: inline-block;
+	text-decoration: none;
+	background-color: var(--pink);
+}
 /*======================== 
 Header Area Style
 =======================*/

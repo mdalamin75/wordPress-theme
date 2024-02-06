@@ -15,7 +15,7 @@ get_header();
             ?>
             <div class="col-md-4">
                 <div class="child_service">
-                    <h2><?the_title();?></h2>
+                    <h2><?php the_title();?></h2>
                     <?php echo the_post_thumbnail('service') ?>
                     <?php the_excerpt();?>
                 </div>
