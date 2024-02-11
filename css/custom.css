@@ -418,16 +418,23 @@ Theme Service Area
 	padding: 45px 0;
 }
 #service_area .child_service{
-	background-color: #ddd;
+	background-color: #f7dae6;
 	box-shadow: 0 0 10px #ddd;
 	padding: 15px;
 	border-radius: 15px;
+}
+#service_area .child_service img{
+	width: 100%;
+	margin-bottom: 5px;
 }
 /*======================== 
 Slider Area Styling
 =======================*/
 #slider_area{
 	margin: 25px 0;
+}
+#slider_area .bx-viewport{
+	max-height: 500px !important;
 }
 #slider_area img{
 	width: 100%;
