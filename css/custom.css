@@ -424,6 +424,16 @@ Theme Service Area
 	border-radius: 15px;
 }
 /*======================== 
+Slider Area Styling
+=======================*/
+#slider_area{
+	margin: 25px 0;
+}
+#slider_area img{
+	width: 100%;
+	height: auto;
+}
+/*======================== 
 Footer Area Styling
 =======================*/
 #footer {
