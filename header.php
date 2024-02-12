@@ -9,6 +9,8 @@
 <head>
     <meta charset="<?php bloginfo('charset')?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a416c1f906.js" crossorigin="anonymous"></script>
     <?php wp_head()?>
 </head>
 <body <?php body_class()?> >

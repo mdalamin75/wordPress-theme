@@ -211,6 +211,9 @@ Index Page Style
 #body_area .post_details {
 	width: 100%;
 }
+#body_area .post_details p span{
+	margin: 0 5px;
+}
 #body_area .post_details h2 {
 	font-family: "Roboto", sans-serif;
 	font-weight: 700;
