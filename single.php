@@ -6,7 +6,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-9 post_page">
-                    <?php get_template_part('template_part/post_setup');?>
+                    <?php get_template_part('template_part/post_setup', get_post_format());?>
                 
                     <div id="comments_area">
                         <?php if(comments_open()) : ?>

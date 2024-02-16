@@ -7,10 +7,11 @@ add_theme_support( 'post-thumbnails', array('page', 'post', 'service', 'slider')
 add_image_size( 'post-thumbnails', 970, 350, true);
 add_image_size( 'service', 400, 200, true);
 add_image_size( 'slider', 1920, 600, true);
+// Add Theme Post Formats
+add_theme_support('post-formats', ['aside', 'gallery', 'image', 'audio', 'video', 'chat']);
 
 
 // Excerpt to 40 word or read more button
-
 function md_excerpt_more($more){
     global $post;
     return '<br> <br> <a class="readmore" href="'.get_permalink( $post->ID) .'">'. 'Read More' . '</a>';

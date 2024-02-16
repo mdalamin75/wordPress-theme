@@ -23,3 +23,10 @@ function md_add_google_fonts(){
     wp_enqueue_style('md_google_fonts', 'https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;700&display=swap', false);
 }
 add_action('wp_enqueue_scripts', 'md_add_google_fonts');
+
+
+// Deshicon Not Showing Fixing
+function deshicon_load_issue(){
+    wp_enqueue_style('deshicons');
+}
+add_action('wp_enqueue_scripts', 'deshicon_load_issue');
