@@ -53,6 +53,16 @@ input[type="submit"].submit:hover {
 	text-decoration: none;
 	background-color: var(--pink);
 }
+.slicknav_menu {
+	display:none;
+	background-color: white;
+}
+.slicknav_nav a {
+    color: #000;
+}
+.slicknav_btn {
+    background-color: var(--pink) !important;
+}
 /*======================== 
 Header Area Style
 =======================*/

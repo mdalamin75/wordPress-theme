@@ -30,7 +30,7 @@ get_header();
             if (have_posts()) :
                 while(have_posts()) : the_post();
             ?>
-            <div class="col-md-4">
+            <div class="col-md-4 mb-3">
                 <div class="child_service">
                     <h2><?php the_title();?></h2>
                     <?php echo the_post_thumbnail('service') ?>

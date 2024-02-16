@@ -17,7 +17,7 @@
     <header id="header_area" class="<?php echo get_theme_mod('md_menu_position'); ?>">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-3">
+                <div class="col-6 col-md-3">
                     <a href="<?php echo home_url(); ?>">
                         <img src="<?php echo get_theme_mod('md_logo'); ?>" alt="logo">
                     </a>
