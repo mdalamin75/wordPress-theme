@@ -59,6 +59,36 @@ function custom_service(){
 
 add_action('init', 'custom_service');
 
+function custom_project(){
+    register_post_type('Project', array(
+        'labels' => array(
+            'name' => ('Projects'),
+            'singular_name' => ('Project'),
+            'add_new' => ('Add New Project'),
+            'add_new_item' => ('Add New Project'),
+            'edit_item' => ('Edit Project'),
+            'new_item' => ('New Project'),
+            'view_item' => ('View Project'),
+            'not_found' => ('Sorry, We cound\'n find the project you are looking for'),
+        ),
+        'menu_icon' => 'dashicons-image-filter',
+        'public' => true,
+        'publicly_queryable' => true,
+        'exclude_from_search' => true,
+        'menu_position' => 5,
+        'has_archive' => true,
+        'hierarchial' => true,
+        'show_uo' => true,
+        'capbility_type' => 'post',
+        'taxonomies' => array('category'),
+        'rewrite' => array('slag' => 'project'),
+        'supports' => array ('title', 'thumbnail', 'editor'),
+    ));
+    add_theme_support('post-thumbnauls');
+}
+
+add_action('init', 'custom_project');
+
 function query_post_type($query){
     if (is_category()) {
         $post_type = get_query_var('post_type');
