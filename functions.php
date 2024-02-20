@@ -25,4 +25,7 @@ include_once('inc/custom_post.php');
 include_once('inc/shortcode.php');
 
 // Login Enqueue Register
-include_once('inc/login-enqueue.php');
+include_once('inc/login_enqueue.php');
+
+// Custom Theme Option Register
+include_once('inc/theme-option/admin_theme_option.php');
