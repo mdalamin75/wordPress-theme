@@ -87,10 +87,47 @@ function md_customizar_register($wp_customize){
         'section' => "md_colors",
         'settings' => 'md_primary_color',
     )));
+    // Theme Custom login page
+    $wp_customize -> add_section('custom_login', array(
+        'title' => __('Custom Login', 'mdalamin'),
+        'description' => 'If you need you can change your theme custom login info.'
+    ));
+    $wp_customize->add_setting('custom_login_logo', array(
+        'default' => get_bloginfo('template_directory').'/img/logo-sm.png'
+    ));
+
+    $wp_customize-> add_control(new WP_Customize_Image_Control($wp_customize, 'custom_login_logo', array(
+        'label' => 'Logo Upload',
+        'description' => 'If you are interested in changing or updating your logo you can do it.',
+        'setting' => 'custom_login_logo',
+        'section' => 'custom_login',
+    )));
+
+    // Custom Login Background
+    $wp_customize->add_setting('custom_login_bg', array(
+        'default' => get_bloginfo('template_directory').'/img/login.jpg'
+    ));
+
+    $wp_customize-> add_control(new WP_Customize_Image_Control($wp_customize, 'custom_login_bg', array(
+        'label' => 'Background Upload',
+        'description' => 'If you are interested in changing or updating your background image you can do it.',
+        'setting' => 'custom_login_bg',
+        'section' => 'custom_login',
+    )));
+    // Custom Login Color
+    $wp_customize -> add_setting('custom_primary_color', array(
+        'default' => "#ea1a70"
+    ));
+
+    $wp_customize -> add_control(new WP_Customize_Color_Control($wp_customize, 'custom_primary_color', array(
+        'label' => 'Primary Color',
+        'section' => "custom_login",
+        'settings' => 'custom_primary_color',
+    )));
 }
 add_action('customize_register','md_customizar_register');
 
-
+// Theme Primary Color
 function md_theme_color_customize(){
     ?>
         <style>
@@ -104,3 +141,35 @@ function md_theme_color_customize(){
     <?php
 }
 add_action('wp_head', 'md_theme_color_customize');
+
+// Theme Custom Login page style
+function custom_color_login(){
+    ?>
+        <style>
+            #login h1 a, .login h1 a {
+                background-image: url(<?php print get_theme_mod("custom_login_logo"); ?>) !important;
+            }
+            body.login {
+                background: url(<?php print get_theme_mod("custom_login_bg"); ?>) !important;
+                background-position: center !important;
+                background-repeat: no-repeat !important;
+                background-size: cover !important;
+                display: flex;
+                align-items: center;
+            }
+            body.login #loginform p.submit input {
+                background-color: <?php print get_theme_mod("custom_primary_color"); ?>!important;
+            }
+            .login .message,
+            .login .notice,
+            .login .success{
+                border-left: 4px solid <?php print get_theme_mod("custom_primary_color"); ?>!important;
+            }
+            input#user_login,
+            input#user_pass {
+                border-left: 4px solid <?php print get_theme_mod("custom_primary_color"); ?>!important;
+            }
+        </style>
+    <?php
+}
+add_action('login_enqueue_scripts', 'custom_color_login');

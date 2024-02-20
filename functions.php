@@ -23,3 +23,6 @@ include_once('inc/custom_post.php');
 
 // Shortcode Register
 include_once('inc/shortcode.php');
+
+// Login Enqueue Register
+include_once('inc/login-enqueue.php');
