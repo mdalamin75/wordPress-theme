@@ -2,7 +2,7 @@
 Common CSS
 =======================*/
 :root{
-	--pink: #ea1a70;
+	--pink: #ea1a70 !important;
 }
 body {
 	font-family: "Roboto", sans-serif;
@@ -67,8 +67,21 @@ input[type="submit"].submit:hover {
 Header Area Style
 =======================*/
 #header_area {
-	padding: 15px 0 20px;
+	padding: 0px 0 20px;
 	box-shadow: 0 3px 10px #ddd;
+}
+.top_header_area{
+	color: white;
+	padding: 10px 0;
+	margin-bottom: 15px;
+	background-color: var(--pink);
+}
+.top_header_area p{
+	margin-bottom: 0;
+}
+.top_header_area i{
+	display: inline-block;
+	margin-right: 10px;
 }
 #header_area .col-md-3 a img {
 	width: 65%;

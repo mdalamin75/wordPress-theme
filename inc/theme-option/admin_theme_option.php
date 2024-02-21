@@ -1,4 +1,13 @@
 <?php
+/*
+* Enqueue theme option CSS
+*/ 
+function theme_option_custom_css(){
+    wp_enqueue_style('theme_option_custom_css', get_template_directory_uri().'/css/theme_option_custom.css', array(), '1.0.0', 'all' );
+}
+add_action('admin_enqueue_scripts','theme_option_custom_css');
+
+// Main theme option menu
 function md_add_theme_page(){
     add_menu_page('Theme Option for Admin', 'Theme Option', 'manage_options', 'md_theme_option', 'md_theme_create_page', get_template_directory_uri().'/img/mini.jpg', 101);
 
